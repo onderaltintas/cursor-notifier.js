@@ -44,7 +44,7 @@ CursorNotifier.NotificationTypes = {
  * Same goes for text.
  */
 CursorNotifier.prototype.notify = function(notificationType,imageUrl,text){
-  if(imageUrl = "") {
+  if(imageUrl === "") {
     this.notificationImage.style.display = "none";  
   } else {
     this.notificationImage.display = "block";
