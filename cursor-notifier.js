@@ -64,7 +64,7 @@ CursorNotifier.prototype.notify = function(notificationType,imageUrl,text){
  * For manual usage show/hide for yerself.
  */
 CursorNotifier.prototype.set = function(imageUrl,text){
-  if(imageUrl = "") {
+  if(imageUrl === "") {
     this.notificationImage.style.display = "none";  
   }
 
@@ -94,14 +94,12 @@ function updateNotificationCoordinates(mouseEvent, notificationDiv){
   //got this code from: https://nerdparadise.com/programming/javascriptmouseposition
   var xpos;
   var ypos;
-  if (mouseEvent)
-  {
+  if (mouseEvent){
     //FireFox
     xpos = mouseEvent.clientX;
     ypos = mouseEvent.clientY;
   }
-  else
-  {
+  else{
     //IE
     xpos = window.event.screenX;
     ypos = window.event.screenY;
